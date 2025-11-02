@@ -10,9 +10,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
     <style>
                     :root {
-                        --primary: #1f7f55;
-                        --primary-light: #2a9968;
-                        --primary-dark: #186544;
+                        --primary: #15395d;
+                        --primary-light: #184a7dff;
+                        --primary-extra-light: #1b558eff;
+                        --primary-dark: rgba(18, 56, 94, 1);
                         --secondary: #ffce85;
                         --secondary-light: #ffe0b3;
                         --secondary-dark: #ffbd57;
@@ -875,7 +876,7 @@
             
                     .footer-links a:hover {
                         opacity: 1;
-                        color: var(--primary);
+                        color: var(--primary-extra-light);
                         padding-left: 5px;
                     }
             
@@ -919,7 +920,7 @@
                         width: 20px;
                         height: 20px;
                         border-radius: 50%;
-                        background-color: rgba(31, 127, 85, 0.5);
+                        background-color: #1e6cbbff;
                         pointer-events: none;
                         transform: translate(-50%, -50%);
                         z-index: 9999;
@@ -939,11 +940,10 @@
                         transition: width 0.2s, height 0.2s, border-color 0.2s, transform 0.1s;
                         display: none;
                     }
-            
                     .dark-mode .cursor {
-                        background-color: rgba(42, 153, 104, 0.5);
+                        background-color: var(--primary-extra-light);
                     }
-            
+
                     .dark-mode .cursor-follower {
                         border-color: var(--primary-light);
                     }
@@ -1169,7 +1169,8 @@
     <!-- Header & Navigation -->
     <header>
     <div class="container nav-container">
-    <a class="logo" href="#">EaseLogics</a>
+    <a class="logo" href="#"><img src="./Logo.png" alt="EaseLogics Logo" style="max-width: 200px; height: auto;">
+</a>
     <div class="mobile-toggle">
     <span></span>
     <span></span>
@@ -1548,7 +1549,7 @@
     </div>
     </div>
     <div class="footer-bottom">
-    <p>© <span id="copyright-year"></span> Easelogics.All Rights Reserved | Designed by <a href="https://www.webuters.com/" target="_blank">Webuters</a></p>
+    <p>© <span id="copyright-year"></span> Easelogics.All Rights Reserved</p>
     </div>
     </div>
     </footer>

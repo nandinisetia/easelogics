@@ -1,0 +1,1975 @@
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>EasyLogics | Business Development Services for SaaS &amp; AI</title>
+    <meta content="EasyLogics provides specialized business development services for SaaS and AI-based products. Scale your technology business with our expert strategies." name="description"/>
+    <meta content="business development, SaaS growth, AI business strategy, technology scaling, B2B sales" name="keywords"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <style>
+                    :root {
+                        --primary: #1f7f55;
+                        --primary-light: #2a9968;
+                        --primary-dark: #186544;
+                        --secondary: #ffce85;
+                        --secondary-light: #ffe0b3;
+                        --secondary-dark: #ffbd57;
+                        --dark: #1a1a1a;
+                        --gray-dark: #333333;
+                        --gray: #666666;
+                        --gray-light: #f5f5f5;
+                        --white: #ffffff;
+                        --transition: all 0.3s ease;
+                        --shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+                        --border-radius: 8px;
+                    }
+            
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+            
+                    body {
+                        font-family: 'Inter', sans-serif;
+                        line-height: 1.6;
+                        color: var(--gray-dark);
+                        overflow-x: hidden;
+                        background-color: var(--white);
+                        transition: var(--transition);
+                    }
+            
+                    body.dark-mode {
+                        background-color: var(--dark);
+                        color: var(--gray-light);
+                    }
+            
+                    h1, h2, h3, h4, h5, h6 {
+                        font-weight: 700;
+                        line-height: 1.2;
+                        margin-bottom: 1rem;
+                    }
+            
+                    h1 {
+                        font-size: clamp(2.5rem, 5vw, 4rem);
+                    }
+            
+                    h2 {
+                        font-size: clamp(2rem, 4vw, 3rem);
+                        position: relative;
+                        margin-bottom: 2.5rem;
+                    }
+            
+                    h2:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        width: 80px;
+                        height: 4px;
+                        background: var(--primary);
+                        border-radius: 2px;
+                    }
+            
+                    .text-center h2:after {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+            
+                    h3 {
+                        font-size: clamp(1.5rem, 3vw, 2.25rem);
+                    }
+            
+                    p {
+                        margin-bottom: 1.5rem;
+                        font-size: 1.1rem;
+                    }
+            
+                    a {
+                        color: var(--primary);
+                        text-decoration: none;
+                        transition: var(--transition);
+                    }
+            
+                    a:hover {
+                        color: var(--primary-light);
+                    }
+            
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+            
+                    .container {
+                        width: 90%;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 0 1rem;
+                    }
+            
+                    section {
+                        padding: 6rem 0;
+                        position: relative;
+                    }
+            
+                    .btn {
+                        display: inline-block;
+                        padding: 0.875rem 1.75rem;
+                        border-radius: var(--border-radius);
+                        font-weight: 600;
+                        text-align: center;
+                        cursor: pointer;
+                        transition: var(--transition);
+                        border: none;
+                        font-size: 1rem;
+                    }
+            
+                    .btn-primary {
+                        background-color: var(--primary);
+                        color: var(--white);
+                    }
+            
+                    .btn-primary:hover {
+                        background-color: var(--primary-light);
+                        color: var(--white);
+                        transform: translateY(-3px);
+                        box-shadow: 0 10px 20px rgba(31, 127, 85, 0.2);
+                    }
+            
+                    .btn-secondary {
+                        background-color: var(--secondary);
+                        color: var(--gray-dark);
+                    }
+            
+                    .btn-secondary:hover {
+                        background-color: var(--secondary-dark);
+                        color: var(--gray-dark);
+                        transform: translateY(-3px);
+                        box-shadow: 0 10px 20px rgba(255, 206, 133, 0.3);
+                    }
+            
+                    .btn-outline {
+                        background-color: transparent;
+                        border: 2px solid var(--primary);
+                        color: var(--primary);
+                    }
+            
+                    .btn-outline:hover {
+                        background-color: var(--primary);
+                        color: var(--white);
+                        transform: translateY(-3px);
+                    }
+            
+                    /* Header & Navigation */
+                    header {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        z-index: 1000;
+                        transition: var(--transition);
+                        padding: 1.5rem 0;
+                        background-color: transparent;
+                    }
+            
+                    header.scrolled {
+                        background-color: var(--white);
+                        padding: 1rem 0;
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                    }
+            
+                    .dark-mode header.scrolled {
+                        background-color: var(--dark);
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+                    }
+            
+                    .nav-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+            
+                    .logo {
+                        font-size: 1.8rem;
+                        font-weight: 800;
+                        color: var(--primary);
+                        z-index: 10;
+                    }
+            
+                    .logo span {
+                        color: var(--secondary);
+                    }
+            
+                    .dark-mode .logo {
+                        color: var(--primary-light);
+                    }
+            
+                    .nav {
+                        display: flex;
+                        transition: var(--transition);
+                    }
+            
+                    .nav-menu {
+                        display: flex;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+            
+                    .nav-menu li {
+                        margin-left: 2rem;
+                        position: relative;
+                    }
+            
+                    .nav-menu a {
+                        color: var(--gray-dark);
+                        font-weight: 500;
+                        font-size: 1.05rem;
+                        transition: var(--transition);
+                        position: relative;
+                    }
+            
+                    .dark-mode .nav-menu a {
+                        color: var(--gray-light);
+                    }
+            
+                    .nav-menu a:before {
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: var(--primary);
+                        transition: var(--transition);
+                    }
+            
+                    .nav-menu a:hover {
+                        color: var(--primary);
+                    }
+            
+                    .nav-menu a:hover:before,
+                    .nav-menu a.active:before {
+                        width: 100%;
+                    }
+            
+                    .mobile-toggle {
+                        display: none;
+                        z-index: 10;
+                    }
+            
+                    .theme-toggle {
+                        margin-left: 1.5rem;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        color: var(--primary);
+                        background: transparent;
+                        border: none;
+                        padding: 0.5rem;
+                        border-radius: 50%;
+                        transition: var(--transition);
+                    }
+            
+                    .theme-toggle:hover {
+                        background: rgba(31, 127, 85, 0.1);
+                    }
+            
+                    .dark-mode .theme-toggle {
+                        color: var(--secondary);
+                    }
+            
+                    /* Hero Section */
+                    .hero {
+                        padding: 0;
+                        height: 100vh;
+                        min-height: 700px;
+                        display: flex;
+                        align-items: center;
+                        background: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+                        background-size: cover;
+                        background-position: center;
+                        position: relative;
+                        overflow: hidden;
+                    }
+            
+                    .dark-mode .hero {
+                        background: linear-gradient(to right, rgba(26, 26, 26, 0.95), rgba(26, 26, 26, 0.8)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+                        background-size: cover;
+                        background-position: center;
+                    }
+            
+                    .hero-content {
+                        position: relative;
+                        z-index: 5;
+                        max-width: 650px;
+                    }
+            
+                    .hero h1 {
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    .hero p {
+                        font-size: 1.25rem;
+                        margin-bottom: 2rem;
+                        opacity: 0.9;
+                    }
+            
+                    .hero-btns {
+                        display: flex;
+                        gap: 1rem;
+                        flex-wrap: wrap;
+                    }
+            
+                    .hero-image {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 45%;
+                        max-width: 650px;
+                        z-index: 1;
+                        animation: float 6s ease-in-out infinite;
+                    }
+            
+                    @keyframes float {
+                        0% {
+                            transform: translateY(0px);
+                        }
+                        50% {
+                            transform: translateY(-20px);
+                        }
+                        100% {
+                            transform: translateY(0px);
+                        }
+                    }
+            
+                    .highlight {
+                        color: var(--primary);
+                        font-weight: 700;
+                    }
+            
+                    .dark-mode .highlight {
+                        color: var(--primary-light);
+                    }
+            
+                    .typed-text::after {
+                        content: '|';
+                        animation: blink 1s infinite;
+                    }
+            
+                    @keyframes blink {
+                        0%, 100% { opacity: 1; }
+                        50% { opacity: 0; }
+                    }
+            
+                    /* Services Section */
+                    .services {
+                        background-color: var(--gray-light);
+                    }
+            
+                    .dark-mode .services {
+                        background-color: var(--gray-dark);
+                    }
+            
+                    .section-intro {
+                        text-align: center;
+                        max-width: 800px;
+                        margin: 0 auto 4rem;
+                    }
+            
+                    .services-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        gap: 2rem;
+                    }
+            
+                    .service-card {
+                        background-color: var(--white);
+                        border-radius: var(--border-radius);
+                        padding: 2.5rem;
+                        box-shadow: var(--shadow);
+                        transition: var(--transition);
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 1;
+                    }
+            
+                    .dark-mode .service-card {
+                        background-color: #242424;
+                    }
+            
+                    .service-card:hover {
+                        transform: translateY(-10px);
+                        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+                    }
+            
+                    .service-icon {
+                        font-size: 3rem;
+                        color: var(--primary);
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    .dark-mode .service-icon {
+                        color: var(--primary-light);
+                    }
+            
+                    .service-card h3 {
+                        margin-bottom: 1rem;
+                    }
+            
+                    .service-card p {
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    /* How We Work Section */
+                    .process {
+                        position: relative;
+                    }
+            
+                    .process-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        gap: 2rem;
+                    }
+            
+                    .process-step {
+                        text-align: center;
+                        padding: 2rem;
+                        position: relative;
+                    }
+            
+                    .step-number {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: var(--primary);
+                        color: var(--white);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        margin: 0 auto 1.5rem;
+                        position: relative;
+                        z-index: 1;
+                    }
+            
+                    .dark-mode .step-number {
+                        background-color: var(--primary-light);
+                    }
+            
+                    .step-content h3 {
+                        margin-bottom: 1rem;
+                    }
+            
+                    .step-line {
+                        position: absolute;
+                        top: 30px;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        background-color: var(--gray-light);
+                        z-index: 0;
+                    }
+            
+                    .dark-mode .step-line {
+                        background-color: #444;
+                    }
+            
+                    /* Case Studies */
+                    .case-studies {
+                        background-color: var(--gray-light);
+                    }
+            
+                    .dark-mode .case-studies {
+                        background-color: var(--gray-dark);
+                    }
+            
+                    .cases-controls {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 3rem;
+                    }
+            
+                    .filter-btn {
+                        padding: 0.5rem 1.25rem;
+                        margin: 0 0.5rem;
+                        background-color: transparent;
+                        border: 2px solid var(--primary);
+                        color: var(--primary);
+                        border-radius: 30px;
+                        cursor: pointer;
+                        font-weight: 600;
+                        transition: var(--transition);
+                    }
+            
+                    .filter-btn.active, .filter-btn:hover {
+                        background-color: var(--primary);
+                        color: var(--white);
+                    }
+            
+                    .dark-mode .filter-btn {
+                        border-color: var(--primary-light);
+                        color: var(--primary-light);
+                    }
+            
+                    .dark-mode .filter-btn.active, .dark-mode .filter-btn:hover {
+                        background-color: var(--primary-light);
+                        color: var(--dark);
+                    }
+            
+                    .cases-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                        gap: 2rem;
+                    }
+            
+                    .case-item {
+                        background-color: var(--white);
+                        border-radius: var(--border-radius);
+                        overflow: hidden;
+                        box-shadow: var(--shadow);
+                        transition: var(--transition);
+                    }
+            
+                    .dark-mode .case-item {
+                        background-color: #242424;
+                    }
+            
+                    .case-item:hover {
+                        transform: translateY(-10px);
+                        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+                    }
+            
+                    .case-image {
+                        height: 240px;
+                        overflow: hidden;
+                    }
+            
+                    .case-image img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.6s ease;
+                    }
+            
+                    .case-item:hover .case-image img {
+                        transform: scale(1.05);
+                    }
+            
+                    .case-content {
+                        padding: 1.5rem;
+                    }
+            
+                    .case-category {
+                        font-size: 0.9rem;
+                        color: var(--primary);
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        margin-bottom: 0.5rem;
+                        letter-spacing: 1px;
+                    }
+            
+                    .dark-mode .case-category {
+                        color: var(--primary-light);
+                    }
+            
+                    .case-item h3 {
+                        font-size: 1.5rem;
+                        margin-bottom: 1rem;
+                    }
+            
+                    .case-item p {
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    /* Testimonials */
+                    .testimonials {
+                        position: relative;
+                        overflow: hidden;
+                    }
+            
+                    .testimonial-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        gap: 2rem;
+                    }
+            
+                    .testimonial-card {
+                        background-color: var(--white);
+                        padding: 2rem;
+                        border-radius: var(--border-radius);
+                        box-shadow: var(--shadow);
+                        position: relative;
+                        transition: var(--transition);
+                    }
+            
+                    .dark-mode .testimonial-card {
+                        background-color: #242424;
+                    }
+            
+                    .testimonial-card:hover {
+                        transform: translateY(-10px);
+                    }
+            
+                    .quote-icon {
+                        font-size: 2rem;
+                        color: var(--primary);
+                        margin-bottom: 1rem;
+                        opacity: 0.3;
+                    }
+            
+                    .dark-mode .quote-icon {
+                        color: var(--primary-light);
+                    }
+            
+                    .testimonial-text {
+                        font-style: italic;
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    .testimonial-client {
+                        display: flex;
+                        align-items: center;
+                    }
+            
+                    .client-image {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-right: 1rem;
+                    }
+            
+                    .client-image img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+            
+                    .client-info h4 {
+                        margin-bottom: 0.25rem;
+                    }
+            
+                    .client-company {
+                        font-size: 0.9rem;
+                        color: var(--gray);
+                    }
+            
+                    .dark-mode .client-company {
+                        color: var(--gray-light);
+                    }
+            
+                    /* CTA Section */
+                    .cta {
+                        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+                        color: var(--white);
+                        text-align: center;
+                        padding: 5rem 0;
+                    }
+            
+                    .cta h2 {
+                        color: var(--white);
+                    }
+            
+                    .cta h2:after {
+                        background: var(--secondary);
+                    }
+            
+                    .cta p {
+                        font-size: 1.2rem;
+                        max-width: 700px;
+                        margin: 0 auto 2rem;
+                        opacity: 0.9;
+                    }
+            
+                    .cta .btn {
+                        margin: 0 0.5rem;
+                    }
+            
+                    /* Contact Section */
+                    .contact-section {
+                        position: relative;
+                    }
+            
+                    .contact-container {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                        gap: 3rem;
+                    }
+            
+                    .contact-info h3 {
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    .contact-details {
+                        margin-bottom: 2rem;
+                    }
+            
+                    .contact-item {
+                        display: flex;
+                        align-items: flex-start;
+                        margin-bottom: 1.25rem;
+                    }
+            
+                    .contact-icon {
+                        font-size: 1.2rem;
+                        color: var(--primary);
+                        margin-right: 1rem;
+                        margin-top: 0.25rem;
+                    }
+            
+                    .dark-mode .contact-icon {
+                        color: var(--primary-light);
+                    }
+            
+                    .contact-text {
+                        flex: 1;
+                    }
+            
+                    .contact-form {
+                        background-color: var(--white);
+                        border-radius: var(--border-radius);
+                        padding: 2.5rem;
+                        box-shadow: var(--shadow);
+                    }
+            
+                    .dark-mode .contact-form {
+                        background-color: #242424;
+                    }
+            
+                    .form-group {
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    .form-label {
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        font-weight: 500;
+                    }
+            
+                    .form-control {
+                        width: 100%;
+                        padding: 0.85rem 1.25rem;
+                        font-size: 1rem;
+                        border: 1px solid #ddd;
+                        border-radius: var(--border-radius);
+                        background-color: var(--white);
+                        transition: var(--transition);
+                        font-family: 'Inter', sans-serif;
+                    }
+            
+                    .dark-mode .form-control {
+                        background-color: #333;
+                        border-color: #444;
+                        color: var(--white);
+                    }
+            
+                    .form-control:focus {
+                        outline: none;
+                        border-color: var(--primary);
+                        box-shadow: 0 0 0 3px rgba(31, 127, 85, 0.1);
+                    }
+            
+                    .dark-mode .form-control:focus {
+                        border-color: var(--primary-light);
+                        box-shadow: 0 0 0 3px rgba(31, 127, 85, 0.2);
+                    }
+            
+                    textarea.form-control {
+                        min-height: 150px;
+                        resize: vertical;
+                    }
+            
+                    /* Footer */
+                    footer {
+                        background-color: var(--gray-dark);
+                        color: var(--white);
+                        padding: 4rem 0 2rem;
+                    }
+            
+                    .dark-mode footer {
+                        background-color: #111;
+                    }
+            
+                    .footer-top {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 3rem;
+                        margin-bottom: 3rem;
+                    }
+            
+                    .footer-logo {
+                        font-size: 1.8rem;
+                        font-weight: 800;
+                        color: var(--white);
+                        margin-bottom: 1rem;
+                    }
+            
+                    .footer-logo span {
+                        color: var(--secondary);
+                    }
+            
+                    .footer-about p {
+                        opacity: 0.8;
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    .social-links {
+                        display: flex;
+                        gap: 1rem;
+                    }
+            
+                    .social-link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        border-radius: 50%;
+                        color: var(--white);
+                        transition: var(--transition);
+                    }
+            
+                    .social-link:hover {
+                        background-color: var(--primary);
+                        color: var(--white);
+                        transform: translateY(-3px);
+                    }
+            
+                    .footer-heading {
+                        font-size: 1.2rem;
+                        margin-bottom: 1.5rem;
+                        position: relative;
+                    }
+            
+                    .footer-heading:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        width: 40px;
+                        height: 3px;
+                        background: var(--primary);
+                        border-radius: 2px;
+                    }
+            
+                    .footer-links {
+                        list-style: none;
+                    }
+            
+                    .footer-links li {
+                        margin-bottom: 0.75rem;
+                    }
+            
+                    .footer-links a {
+                        color: var(--white);
+                        opacity: 0.7;
+                        transition: var(--transition);
+                    }
+            
+                    .footer-links a:hover {
+                        opacity: 1;
+                        color: var(--primary);
+                        padding-left: 5px;
+                    }
+            
+                    .dark-mode .footer-links a:hover {
+                        color: var(--primary-light);
+                    }
+            
+                    .footer-bottom {
+                        padding-top: 2rem;
+                        border-top: 1px solid rgba(255, 255, 255, 0.1);
+                        text-align: center;
+                        opacity: 0.7;
+                        font-size: 0.9rem;
+                    }
+            
+                    /* Custom Scrollbar */
+                    ::-webkit-scrollbar {
+                        width: 12px;
+                    }
+            
+                    ::-webkit-scrollbar-track {
+                        background: var(--white);
+                    }
+            
+                    .dark-mode ::-webkit-scrollbar-track {
+                        background: var(--dark);
+                    }
+            
+                    ::-webkit-scrollbar-thumb {
+                        background: var(--primary);
+                        border-radius: 6px;
+                    }
+            
+                    ::-webkit-scrollbar-thumb:hover {
+                        background: var(--primary-dark);
+                    }
+            
+                    /* Cursor Effects */
+                    .cursor {
+                        position: fixed;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: rgba(31, 127, 85, 0.5);
+                        pointer-events: none;
+                        transform: translate(-50%, -50%);
+                        z-index: 9999;
+                        transition: width 0.2s, height 0.2s, background-color 0.2s;
+                        display: none;
+                    }
+            
+                    .cursor-follower {
+                        position: fixed;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid var(--primary);
+                        pointer-events: none;
+                        transform: translate(-50%, -50%);
+                        z-index: 9998;
+                        transition: width 0.2s, height 0.2s, border-color 0.2s, transform 0.1s;
+                        display: none;
+                    }
+            
+                    .dark-mode .cursor {
+                        background-color: rgba(42, 153, 104, 0.5);
+                    }
+            
+                    .dark-mode .cursor-follower {
+                        border-color: var(--primary-light);
+                    }
+            
+                    /* Responsive Styles */
+                    @media (max-width: 992px) {
+                        .hero {
+                            min-height: 600px;
+                            height: auto;
+                            padding: 120px 0 80px;
+                        }
+                        
+                        .hero-image {
+                            position: relative;
+                            width: 70%;
+                            max-width: 400px;
+                            margin: 3rem auto 0;
+                            right: auto;
+                            bottom: auto;
+                        }
+                        
+                        .cases-grid {
+                            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        }
+                        
+                        .cursor, .cursor-follower {
+                            display: none !important;
+                        }
+                    }
+            
+                    @media (max-width: 768px) {
+                        section {
+                            padding: 4rem 0;
+                        }
+                        
+                        h1 {
+                            font-size: clamp(2.2rem, 4vw, 3rem);
+                        }
+                        
+                        h2 {
+                            font-size: clamp(1.8rem, 3vw, 2.5rem);
+                        }
+                        
+                        .nav-container {
+                            padding: 0 1rem;
+                        }
+                        
+                        .mobile-toggle {
+                            display: block;
+                            position: relative;
+                            width: 30px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                        
+                        .mobile-toggle span {
+                            position: absolute;
+                            height: 3px;
+                            width: 100%;
+                            background-color: var(--gray-dark);
+                            border-radius: 3px;
+                            left: 0;
+                            transition: var(--transition);
+                        }
+                        
+                        .dark-mode .mobile-toggle span {
+                            background-color: var(--white);
+                        }
+                        
+                        .mobile-toggle span:nth-child(1) {
+                            top: 0;
+                        }
+                        
+                        .mobile-toggle span:nth-child(2) {
+                            top: 10px;
+                        }
+                        
+                        .mobile-toggle span:nth-child(3) {
+                            top: 20px;
+                        }
+                        
+                        .mobile-toggle.active span:nth-child(1) {
+                            transform: rotate(45deg);
+                            top: 10px;
+                        }
+                        
+                        .mobile-toggle.active span:nth-child(2) {
+                            opacity: 0;
+                        }
+                        
+                        .mobile-toggle.active span:nth-child(3) {
+                            transform: rotate(-45deg);
+                            top: 10px;
+                        }
+                        
+                        .nav {
+                            position: fixed;
+                            top: 0;
+                            right: -100%;
+                            width: 80%;
+                            max-width: 400px;
+                            height: 100vh;
+                            background-color: var(--white);
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 100px 2rem 2rem;
+                            z-index: 5;
+                            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+                        }
+                        
+                        .dark-mode .nav {
+                            background-color: var(--gray-dark);
+                        }
+                        
+                        .nav.active {
+                            right: 0;
+                        }
+                        
+                        .nav-menu {
+                            flex-direction: column;
+                            width: 100%;
+                        }
+                        
+                        .nav-menu li {
+                            margin: 0 0 1.5rem;
+                            width: 100%;
+                        }
+                        
+                        .nav-menu a {
+                            display: block;
+                            font-size: 1.2rem;
+                            padding: 0.5rem 0;
+                        }
+                        
+                        .overlay {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: var(--transition);
+                            z-index: 4;
+                        }
+                        
+                        .overlay.active {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        
+                        .theme-toggle {
+                            position: absolute;
+                            top: 100px;
+                            right: 2rem;
+                        }
+                        
+                        .hero-btns {
+                            justify-content: center;
+                        }
+                        
+                        .step-line {
+                            display: none;
+                        }
+                        
+                        .cases-controls {
+                            flex-wrap: wrap;
+                            gap: 0.5rem;
+                        }
+                        
+                        .filter-btn {
+                            margin-bottom: 0.5rem;
+                        }
+                        
+                        .cases-grid {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+            
+                    @media (max-width: 576px) {
+                        .container {
+                            width: 95%;
+                            padding: 0 0.5rem;
+                        }
+                        
+                        .services-grid, .process-grid, .testimonial-grid {
+                            grid-template-columns: 1fr;
+                        }
+                        
+                        .hero h1 {
+                            font-size: 2rem;
+                        }
+                        
+                        .hero p {
+                            font-size: 1.1rem;
+                        }
+                        
+                        .hero-btns {
+                            flex-direction: column;
+                            width: 100%;
+                        }
+                        
+                        .hero-btns .btn {
+                            width: 100%;
+                            margin-bottom: 1rem;
+                        }
+                        
+                        .case-image {
+                            height: 200px;
+                        }
+                        
+                        .contact-form {
+                            padding: 1.5rem;
+                        }
+                    }
+                </style>
+    </head>
+    <body style="outline: rgb(247, 160, 29) dashed 2px;">
+    <!-- Cursor Effects -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <!-- Header & Navigation -->
+    <header>
+    <div class="container nav-container">
+    <a class="logo" href="#">EaseLogics</a>
+    <div class="mobile-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    <nav class="nav">
+    <ul class="nav-menu">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">How We Work</a></li>
+    <li><a href="#case-studies">Case Studies</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button aria-label="Toggle dark mode" class="theme-toggle">
+    <i class="fas fa-moon"></i>
+    </button>
+    </nav>
+    </div>
+    </header>
+    <div class="overlay"></div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+    <div class="container">
+    <div class="hero-content">
+    <h1>Business Development for <span class="highlight typed-text">SaaS &amp; AI Products</span></h1>
+    <p>We expertise in Microsoft Dynamics 365, Azure integrations, Power Platform, coupled with over two decades of experience delivering tailored enterprise solutions.</p>
+    <div class="hero-btns">
+    <a class="btn btn-primary" href="#services">Our Services</a>
+    <a class="btn btn-outline" href="#contact">Schedule a Call</a>
+    </div>
+    </div>
+    <div class="hero-image">
+    <img alt="Business Growth Visualization" src="https://storage.googleapis.com/sitebuild-prod.firebasestorage.app/sites/ao1FtNot0Td5PYDOHYd9p07VPgY2/PaXG5eD8Uws75dHFLRnu/images/9452eeef2d174372b37090cc69e5300f-image_6ca5bdacdea0470c86352917145b8de6.jpg"/>
+    </div>
+    </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services" id="services">
+    <div class="container">
+    <div class="section-intro">
+    <h2>Our Services</h2>
+    <p>We provide comprehensive business development solutions tailored specifically for SaaS and AI-based products. Our strategic approach helps technology companies scale efficiently and sustainably.</p>
+    </div>
+    <div class="services-grid">
+    <div class="service-card">
+    <div class="service-icon">
+    <i class="fas fa-chart-line"></i>
+    </div>
+    <h3>Microsoft Dynamics 365</h3>
+    <p>Streamline operations, boost productivity, and unify your business with Microsoft Dynamics 365’s intelligent cloud-based solutions.</p>
+    <a class="btn btn-outline" href="#contact">Learn More</a>
+    </div>
+    <div class="service-card">
+    <div class="service-icon">
+    <i class="fas fa-handshake"></i>
+    </div>
+    <h3>Azure integrations</h3>
+    <p>Seamlessly connect apps, data, and services with powerful, scalable Azure integrations for smarter business operations.    </p>
+    <a class="btn btn-outline" href="#contact">Learn More</a>
+    </div>
+    <div class="service-card">
+    <div class="service-icon">
+    <i class="fas fa-globe"></i>
+    </div>
+    <h3>Power Platform</h3>
+    <p>Empower your team to analyze, automate, and innovate with Microsoft Power Platform’s low-code tools and insights.    </p>
+    <a class="btn btn-outline" href="#contact">Learn More</a>
+    </div>
+    <div class="service-card">
+    <div class="service-icon">
+    <i class="fas fa-money-bill-wave"></i>
+    </div>
+    <h3>Cloud Computing</h3>
+    <p>Unlock flexibility, scalability, and efficiency with secure, on-demand cloud computing solutions for your business.    </p>
+    <a class="btn btn-outline" href="#contact">Learn More</a>
+    </div>
+    <div class="service-card">
+    <div class="service-icon">
+    <i class="fas fa-users"></i>
+    </div>
+    <h3>Compliance Frameworks</h3>
+    <p>Ensure data security, privacy, and regulatory adherence with robust, industry-standard compliance frameworks.    </p>
+    <a class="btn btn-outline" href="#contact">Learn More</a>
+    </div>
+    <div class="service-card">
+    <div class="service-icon">
+    <i class="fas fa-lightbulb"></i>
+    </div>
+    <h3>SAP Integration</h3>
+    <p>Connect and optimize business processes seamlessly with reliable, real-time SAP integration solutions.</p>
+    <a class="btn btn-outline" href="#contact">Learn More</a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- How We Work Section -->
+    <section class="process" id="process">
+    <div class="container">
+    <div class="section-intro">
+    <h2>How We Work</h2>
+    <p>Our proven methodology ensures consistent results for our clients. We follow a structured approach that combines strategic thinking with tactical execution.</p>
+    </div>
+    <div class="process-grid">
+    <div class="step-line"></div>
+    <div class="process-step">
+    <div class="step-number">1</div>
+    <div class="step-content">
+    <h3>Discovery</h3>
+    <p>We conduct a thorough analysis of your current position, product capabilities, market landscape, and growth objectives.</p>
+    </div>
+    </div>
+    <div class="process-step">
+    <div class="step-number">2</div>
+    <div class="step-content">
+    <h3>Strategy</h3>
+    <p>Based on discovery insights, we develop a tailored business development strategy with clear goals and implementation roadmap.</p>
+    </div>
+    </div>
+    <div class="process-step">
+    <div class="step-number">3</div>
+    <div class="step-content">
+    <h3>Execution</h3>
+    <p>We implement the strategy with precision, managing all aspects of business development initiatives and partnerships.</p>
+    </div>
+    </div>
+    <div class="process-step">
+    <div class="step-number">4</div>
+    <div class="step-content">
+    <h3>Optimization</h3>
+    <p>Continuous monitoring and refinement ensure maximum results, with regular reporting and strategy adjustments.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Case Studies Section -->
+    <section class="case-studies" id="case-studies">
+    <div class="container">
+    <div class="section-intro">
+    <h2>Success Stories</h2>
+    <p>Explore how we've helped SaaS and AI-focused companies achieve exceptional growth through strategic business development.</p>
+    </div>
+    <div class="cases-controls">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="saas">Microsoft Dynamics 365</button>
+    <button class="filter-btn" data-filter="ai">Azure integrations</button>
+    <button class="filter-btn" data-filter="market">Power Platform</button>
+    </div>
+    <div class="cases-grid">
+    <div class="case-item" data-category="saas">
+    <div class="case-image">
+    <img alt="CloudStack SaaS Platform" src="https://storage.googleapis.com/sitebuild-prod.firebasestorage.app/sites/ao1FtNot0Td5PYDOHYd9p07VPgY2/PaXG5eD8Uws75dHFLRnu/images/af7b0cf8a0f6413d9991d51e3a3ecb0c-image_770af74a2943485f83db4bb5881de0da.jpg"/>
+    </div>
+    <div class="case-content">
+    <div class="case-category">SaaS</div>
+    <h3>CloudStack Platform</h3>
+    <p>Helped this cloud management platform achieve 215% revenue growth in 18 months through strategic partnerships and sales enablement.</p>
+    <a class="btn btn-outline" href="#">Know More</a></div>
+    </div>
+    <div class="case-item" data-category="ai">
+    <div class="case-image">
+    <img alt="Sentient AI Solution" src="https://storage.googleapis.com/sitebuild-prod.firebasestorage.app/sites/ao1FtNot0Td5PYDOHYd9p07VPgY2/PaXG5eD8Uws75dHFLRnu/images/e97fc611f80d438ab2af8c38c6e0578f-image_982121c0234341a8a73075e90da41c70.jpg"/>
+    </div>
+    <div class="case-content">
+    <div class="case-category">AI Products</div>
+    <h3>Sentient Analytics</h3>
+    <p>Developed go-to-market strategy for an AI analytics solution that resulted in 12 enterprise clients within first quarter of launch.</p>
+    <a class="btn btn-outline" href="#">Know More</a></div>
+    </div>
+    <div class="case-item" data-category="market">
+    <div class="case-image">
+    <img alt="Global Expansion" src="https://storage.googleapis.com/sitebuild-prod.firebasestorage.app/sites/ao1FtNot0Td5PYDOHYd9p07VPgY2/PaXG5eD8Uws75dHFLRnu/images/edd2d68acd784e77a71929504cb49b90-image_5d3419bab202497f8d0125df7d1b1589.jpg"/>
+    </div>
+    <div class="case-content">
+    <div class="case-category">Market Expansion</div>
+    <h3>DevSecOps Platform</h3>
+    <p>Guided European expansion for a DevSecOps platform, establishing operations in 5 countries and securing regional partnerships.</p>
+    <a class="btn btn-outline" href="#">Know More</a></div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+    <div class="container">
+    <div class="section-intro">
+    <h2>Client Testimonials</h2>
+    <p>Hear what our clients have to say about their experience working with EasyLogics.</p>
+    </div>
+    <div class="testimonial-grid">
+    <div class="testimonial-card">
+    <div class="quote-icon">
+    <i class="fas fa-quote-left"></i>
+    </div>
+    <p class="testimonial-text">EasyLogics transformed our approach to business development. Their deep understanding of the SaaS landscape and strategic partnership development delivered exceptional results. We've doubled our ARR in just 14 months.</p>
+    <div class="testimonial-client">
+    <div class="client-image">
+    <img alt="Michael Chen" src="https://storage.googleapis.com/sitebuild-prod.firebasestorage.app/sites/ao1FtNot0Td5PYDOHYd9p07VPgY2/PaXG5eD8Uws75dHFLRnu/images/71ae62c03d064db6a2dd866f7346ca4e-image_ab97eeec5a3249eba817fce8996d9cbb.jpg"/>
+    </div>
+    <div class="client-info">
+    <h4>Michael Chen</h4>
+    <p class="client-company">CEO, DataSync Solutions</p>
+    </div>
+    </div>
+    </div>
+    <div class="testimonial-card">
+    <div class="quote-icon">
+    <i class="fas fa-quote-left"></i>
+    </div>
+    <p class="testimonial-text">As an AI startup, we faced unique challenges in articulating our value proposition. EasyLogics not only helped us refine our messaging but built a sales enablement program that our team still uses daily. They're truly experts in this space.</p>
+    <div class="testimonial-client">
+    <div class="client-image">
+    <img alt="Sarah Johnson" src="https://storage.googleapis.com/sitebuild-prod.firebasestorage.app/sites/ao1FtNot0Td5PYDOHYd9p07VPgY2/PaXG5eD8Uws75dHFLRnu/images/78cb3173a23941c8aef08c378843d44b-image_1d51d03a6120486a8097cb896c55fe0a.jpg"/>
+    </div>
+    <div class="client-info">
+    <h4>Sarah Johnson</h4>
+    <p class="client-company">Founder, NeuralWorks AI</p>
+    </div>
+    </div>
+    </div>
+    <div class="testimonial-card">
+    <div class="quote-icon">
+    <i class="fas fa-quote-left"></i>
+    </div>
+    <p class="testimonial-text">The EasyLogics team executed our international expansion with precision and expertise. Their knowledge of regional markets and ability to navigate complex partnership negotiations was invaluable. We couldn't be happier with the results.</p>
+    <div class="testimonial-client">
+    <div class="client-image">
+    <img alt="David Rodriguez" src="https://storage.googleapis.com/sitebuild-prod.firebasestorage.app/sites/ao1FtNot0Td5PYDOHYd9p07VPgY2/PaXG5eD8Uws75dHFLRnu/images/c65a36c033c34636aa772e2b1a07ec60-image_bff36a555a994b289523a73f0fa26a47.jpg"/>
+    </div>
+    <div class="client-info">
+    <h4>David Rodriguez</h4>
+    <p class="client-company">CRO, CloudSecure</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta">
+    <div class="container">
+    <h2>Ready to Accelerate Your Growth?</h2>
+    <p>Let's discuss how our specialized business development services can help your SaaS or AI product reach its full potential in the market.</p>
+    <div class="cta-buttons">
+    <a class="btn btn-secondary" href="#contact">Schedule a Consultation</a>
+    <a class="btn btn-outline" href="#services">Explore Services</a>
+    </div>
+    </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+    <div class="container">
+    <div class="section-intro">
+    <h2>Get in Touch</h2>
+    <p>Interested in learning how we can help your business grow? Reach out to us today.</p>
+    </div>
+    <div class="contact-container">
+    <div class="contact-info">
+    <h3>Contact Information</h3>
+    <div class="contact-details">
+    <div class="contact-item">
+    <div class="contact-icon">
+    <i class="fas fa-map-marker-alt"></i>
+    </div>
+    <div class="contact-text">
+    <p>324, Sector 15, Sonipat (HR) 131001, India</p>
+    </div>
+    </div>
+    <div class="contact-item">
+    <div class="contact-icon">
+    <i class="fas fa-phone-alt"></i>
+    </div>
+    <div class="contact-text">
+    <p>+91 86071 75900</p>
+    </div>
+    </div>
+    <div class="contact-item">
+    <div class="contact-icon">
+    <i class="fas fa-envelope"></i>
+    </div>
+    <div class="contact-text">
+    <p>info@easelogics.com</p>
+    </div>
+    </div>
+    </div>
+    <div class="contact-image">
+    <img alt="Contact us" src="https://storage.googleapis.com/sitebuild-prod.firebasestorage.app/sites/ao1FtNot0Td5PYDOHYd9p07VPgY2/PaXG5eD8Uws75dHFLRnu/images/99cccc75cda34087ac020645848382fe-image_dbf20115153c440aab46f34d388c09ce.jpg"/>
+    </div>
+    </div>
+    <div class="contact-form-container">
+    <form class="contact-form" data-form-type="officeiq-lead">
+    <div class="form-group">
+    <label class="form-label" for="name">Full Name</label>
+    <input class="form-control" id="name" name="name" required="" type="text"/>
+    </div>
+    <div class="form-group">
+    <label class="form-label" for="company">Company Name</label>
+    <input class="form-control" id="company" name="company" required="" type="text"/>
+    </div>
+    <div class="form-group">
+    <label class="form-label" for="email">Email Address</label>
+    <input class="form-control" id="email" name="email" required="" type="email"/>
+    </div>
+    <div class="form-group">
+    <label class="form-label" for="phone">Phone Number</label>
+    <input class="form-control" id="phone" name="phone" type="tel"/>
+    </div>
+    <div class="form-group">
+    <label class="form-label" for="service">Service Interest</label>
+    <select class="form-control" id="service" name="service" required="">
+    <option disabled="" selected="" value="">Select a service</option>
+    <option value="growth-strategy">Microsoft Dynamics 365
+                </option>
+    <option value="azure-integrations">Azure integrations</option>
+    <option value="power-platform">Power Platform</option>
+    <option value="cloud-computing">Cloud Computing</option>
+    <option value="compliance-frameworks">Compliance Frameworks</option>
+    <option value="sap-integration">SAP Integration</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label class="form-label" for="message">Tell Us About Your Project</label>
+    <textarea class="form-control" id="message" name="message" required=""></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+    <div class="container">
+    <div class="footer-top">
+    <div class="footer-about">
+    <div class="footer-logo">EasyLogics</div>
+    <p>Specialized business development services for SaaS and AI products. We help technology companies scale through strategic partnerships, market expansion, and revenue optimization.</p>
+    <div class="social-links">
+    <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+    <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+    <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    </div>
+    <div class="footer-links-container">
+    <h4 class="footer-heading">Services</h4>
+    <ul class="footer-links">
+    <li><a href="#services">Microsoft Dynamics 365</a></li>
+    <li><a href="#services">Azure Integrations</a></li>
+    <li><a href="#services">Power Platform</a></li>
+    <li><a href="#services">Revenue Optimization</a></li>
+    <li><a href="#services">Sales Enablement</a></li>
+    </ul>
+    </div>
+    <div class="footer-links-container">
+    <h4 class="footer-heading">Company</h4>
+    <ul class="footer-links">
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#case-studies">Case Studies</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#">Careers</a></li>
+    </ul>
+    </div>
+    <div class="footer-links-container">
+    <h4 class="footer-heading">Resources</h4>
+    <ul class="footer-links">
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Guides</a></li>
+    <li><a href="#">Webinars</a></li>
+    <li><a href="#">Podcast</a></li>
+    <li><a href="#">Newsletter</a></li>
+    <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <p>© <span id="copyright-year"></span> Easelogics.All Rights Reserved | Designed by <a href="https://www.webuters.com/" target="_blank">Webuters</a></p>
+    </div>
+    </div>
+    </footer>
+    <script>
+                    // Set current year in copyright
+                    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+            
+                    // Mobile menu toggle
+                    const mobileToggle = document.querySelector('.mobile-toggle');
+                    const mainNav = document.querySelector('.nav');
+                    const overlay = document.querySelector('.overlay');
+                    const navLinks = document.querySelectorAll('.nav-menu a');
+            
+                    function toggleMenu() {
+                        mobileToggle.classList.toggle('active');
+                        mainNav.classList.toggle('active');
+                        overlay.classList.toggle('active');
+                        document.body.classList.toggle('no-scroll');
+                    }
+            
+                    mobileToggle.addEventListener('click', toggleMenu);
+                    overlay.addEventListener('click', toggleMenu);
+            
+                    navLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            if (mainNav.classList.contains('active')) {
+                                toggleMenu();
+                            }
+                        });
+                    });
+            
+                    // Dark mode toggle
+                    const themeToggle = document.querySelector('.theme-toggle');
+                    const themeIcon = themeToggle.querySelector('i');
+            
+                    themeToggle.addEventListener('click', () => {
+                        document.body.classList.toggle('dark-mode');
+                        if (document.body.classList.contains('dark-mode')) {
+                            themeIcon.classList.remove('fa-moon');
+                            themeIcon.classList.add('fa-sun');
+                            localStorage.setItem('theme', 'dark');
+                        } else {
+                            themeIcon.classList.remove('fa-sun');
+                            themeIcon.classList.add('fa-moon');
+                            localStorage.setItem('theme', 'light');
+                        }
+                    });
+            
+                    // Check for saved theme preference
+                    const savedTheme = localStorage.getItem('theme');
+                    if (savedTheme === 'dark') {
+                        document.body.classList.add('dark-mode');
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                    }
+            
+                    // Sticky header
+                    const header = document.querySelector('header');
+                    window.addEventListener('scroll', () => {
+                        if (window.scrollY > 100) {
+                            header.classList.add('scrolled');
+                        } else {
+                            header.classList.remove('scrolled');
+                        }
+                    });
+            
+                    // Cursor effects for desktop
+                    const cursor = document.querySelector('.cursor');
+                    const cursorFollower = document.querySelector('.cursor-follower');
+            
+                    if (window.innerWidth > 992) {
+                        cursor.style.display = 'block';
+                        cursorFollower.style.display = 'block';
+                        
+                        document.addEventListener('mousemove', (e) => {
+                            cursor.style.left = e.clientX + 'px';
+                            cursor.style.top = e.clientY + 'px';
+                            
+                            cursorFollower.style.left = e.clientX + 'px';
+                            cursorFollower.style.top = e.clientY + 'px';
+                        });
+                        
+                        const links = document.querySelectorAll('a, button, .btn, input, textarea, select');
+                        links.forEach(link => {
+                            link.addEventListener('mouseenter', () => {
+                                cursor.style.width = '0px';
+                                cursor.style.height = '0px';
+                                cursorFollower.style.width = '60px';
+                                cursorFollower.style.height = '60px';
+                                cursorFollower.style.borderColor = 'var(--primary)';
+                            });
+                            
+                            link.addEventListener('mouseleave', () => {
+                                cursor.style.width = '20px';
+                                cursor.style.height = '20px';
+                                cursorFollower.style.width = '40px';
+                                cursorFollower.style.height = '40px';
+                            });
+                        });
+                    }
+            
+                    // Smooth scrolling for anchor links
+                    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                        anchor.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            const targetId = this.getAttribute('href');
+                            if (targetId === '#') return;
+                            
+                            const targetElement = document.querySelector(targetId);
+                            if (targetElement) {
+                                window.scrollTo({
+                                    top: targetElement.offsetTop - 80,
+                                    behavior: 'smooth'
+                                });
+                                
+                                // Update active nav link
+                                document.querySelectorAll('.nav-menu a').forEach(navLink => {
+                                    navLink.classList.remove('active');
+                                });
+                                this.classList.add('active');
+                            }
+                        });
+                    });
+            
+                    // Active nav link on scroll
+                    const sections = document.querySelectorAll('section');
+                    window.addEventListener('scroll', () => {
+                        let current = '';
+                        sections.forEach(section => {
+                            const sectionTop = section.offsetTop;
+                            const sectionHeight = section.clientHeight;
+                            if (pageYOffset >= (sectionTop - 200)) {
+                                current = section.getAttribute('id');
+                            }
+                        });
+                        
+                        document.querySelectorAll('.nav-menu a').forEach(navLink => {
+                            navLink.classList.remove('active');
+                            if (navLink.getAttribute('href') === `#${current}`) {
+                                navLink.classList.add('active');
+                            }
+                        });
+                    });
+            
+                    // Typing animation for hero section
+                    const typedTextElement = document.querySelector('.typed-text');
+                    const texts = ['SaaS & AI Products', 'Technology Startups', 'Enterprise Solutions'];
+                    let textIndex = 0;
+                    let charIndex = 0;
+                    let isDeleting = false;
+                    let typingSpeed = 100;
+            
+                    function typeText() {
+                        const currentText = texts[textIndex];
+                        
+                        if (isDeleting) {
+                            typedTextElement.textContent = currentText.substring(0, charIndex - 1);
+                            charIndex--;
+                            typingSpeed = 50;
+                        } else {
+                            typedTextElement.textContent = currentText.substring(0, charIndex + 1);
+                            charIndex++;
+                            typingSpeed = 100;
+                        }
+                        
+                        if (!isDeleting && charIndex === currentText.length) {
+                            isDeleting = true;
+                            typingSpeed = 1500;
+                        } else if (isDeleting && charIndex === 0) {
+                            isDeleting = false;
+                            textIndex = (textIndex + 1) % texts.length;
+                            typingSpeed = 500;
+                        }
+                        
+                        setTimeout(typeText, typingSpeed);
+                    }
+            
+                    setTimeout(typeText, 1000);
+            
+                    // Portfolio filtering
+                    const filterButtons = document.querySelectorAll('.filter-btn');
+                    const caseItems = document.querySelectorAll('.case-item');
+            
+                    filterButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Update active button
+                            filterButtons.forEach(btn => btn.classList.remove('active'));
+                            button.classList.add('active');
+                            
+                            const filter = button.dataset.filter;
+                            
+                            caseItems.forEach(item => {
+                                if (filter === 'all' || item.dataset.category === filter) {
+                                    item.style.display = 'block';
+                                    setTimeout(() => {
+                                        item.style.opacity = '1';
+                                        item.style.transform = 'scale(1)';
+                                    }, 100);
+                                } else {
+                                    item.style.opacity = '0';
+                                    item.style.transform = 'scale(0.8)';
+                                    setTimeout(() => {
+                                        item.style.display = 'none';
+                                    }, 300);
+                                }
+                            });
+                        });
+                    });
+            
+                    // Form submission event
+                    const contactForm = document.querySelector('.contact-form');
+                    contactForm.addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        
+                        // In a real implementation, add form submission code here
+                        // For demo purposes, just show an alert
+                        alert('Thank you! Your message has been sent successfully.');
+                        contactForm.reset();
+                    });
+                </script>
+    
+    <!-- Lead Form Handler Script #1 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ORG_ID = "ao1FtNot0Td5PYDOHYd9p07VPgY2_PaXG5eD8Uws75dHFLRnu";
+            const leadForms = document.querySelectorAll('form[data-form-type="officeiq-lead"]');
+            
+            leadForms.forEach(form => {
+                // Add hidden orgID field if it doesn't exist
+                if (!form.querySelector('input[name="orgID"]')) {
+                    const orgIdInput = document.createElement('input');
+                    orgIdInput.type = 'hidden';
+                    orgIdInput.name = 'orgID';
+                    orgIdInput.value = ORG_ID;
+                    form.appendChild(orgIdInput);
+                }
+                
+                // Add submit event listener
+                form.addEventListener('submit', handleLeadFormSubmit);
+            });
+
+            function handleLeadFormSubmit(event) {
+                event.preventDefault();
+                
+                const form = event.target;
+                const submitButton = form.querySelector('button[type="submit"]');
+                
+                if (!submitButton) return;
+                
+                // Update button state
+                const originalButtonText = submitButton.textContent;
+                submitButton.textContent = 'Submitting...';
+                submitButton.disabled = true;
+                
+                // Collect form data
+                const formData = new FormData(form);
+                const leadData = {
+                    timestamp: new Date().toISOString(),
+                    page_url: window.location.href,
+                    referrer: document.referrer || 'Direct',
+                    form_name: form.getAttribute('data-form-name') || form.id || 'Lead Form'
+                };
+                
+                // Add form fields to leadData
+                for (const [key, value] of formData.entries()) {
+                    if (value && value.trim() !== '') {
+                        leadData[key] = value;
+                    }
+                }
+                
+                console.log('Form submission data:', leadData);
+                
+                // Submit to API
+                fetch('https://lead-handler-service-600378212322.us-central1.run.app/submit-lead', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(leadData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            throw new Error(errorData.error || 'Submission failed');
+                        }).catch(err => {
+                            throw new Error('Network response was not ok');
+                        });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Success handling
+                    form.reset();
+                    
+                    // Google Analytics tracking
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'lead_submission', {
+                            'event_category': 'lead',
+                            'event_label': form.id || 'lead_form'
+                        });
+                    }
+                    
+                    // Optional redirect
+                    const redirectUrl = form.getAttribute('data-redirect');
+                    if (redirectUrl) {
+                        window.location.href = redirectUrl;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error submitting form:', error);
+                    alert('There was an error submitting your information. Please try again or contact us directly.');
+                })
+                .finally(() => {
+                    // Restore button state
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                });
+            }
+        });
+    </script>
+
+    <!-- Lead Form Handler Script #2 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ORG_ID = "oUkL2BKVwYP7PruV58AVv2DBo2f1_2LZCHOI7gGXgxy7XfuSR";
+            const leadForms = document.querySelectorAll('form[data-form-type="officeiq-lead"]');
+            
+            leadForms.forEach(form => {
+                // Add hidden orgID field if it doesn't exist
+                if (!form.querySelector('input[name="orgID"]')) {
+                    const orgIdInput = document.createElement('input');
+                    orgIdInput.type = 'hidden';
+                    orgIdInput.name = 'orgID';
+                    orgIdInput.value = ORG_ID;
+                    form.appendChild(orgIdInput);
+                }
+                
+                // Add submit event listener
+                form.addEventListener('submit', handleLeadFormSubmit);
+            });
+
+            function handleLeadFormSubmit(event) {
+                event.preventDefault();
+                
+                const form = event.target;
+                const submitButton = form.querySelector('button[type="submit"]');
+                
+                if (!submitButton) return;
+                
+                // Update button state
+                const originalButtonText = submitButton.textContent;
+                submitButton.textContent = 'Submitting...';
+                submitButton.disabled = true;
+                
+                // Collect form data
+                const formData = new FormData(form);
+                const leadData = {
+                    timestamp: new Date().toISOString(),
+                    page_url: window.location.href,
+                    referrer: document.referrer || 'Direct',
+                    form_name: form.getAttribute('data-form-name') || form.id || 'Lead Form'
+                };
+                
+                // Add form fields to leadData
+                for (const [key, value] of formData.entries()) {
+                    if (value && value.trim() !== '') {
+                        leadData[key] = value;
+                    }
+                }
+                
+                console.log('Form submission data:', leadData);
+                
+                // Submit to API
+                fetch('https://site-build-ai-leads.officeiq.ai/submit-lead', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(leadData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(errorData => {
+                            throw new Error(errorData.error || 'Submission failed');
+                        }).catch(err => {
+                            throw new Error('Network response was not ok');
+                        });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Success handling with user feedback
+                    alert('Thank you for your interest! Our team will contact you shortly.');
+                    form.reset();
+                    
+                    // Google Analytics tracking
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'lead_submission', {
+                            'event_category': 'lead',
+                            'event_label': form.id || 'lead_form'
+                        });
+                    }
+                    
+                    // Optional redirect
+                    const redirectUrl = form.getAttribute('data-redirect');
+                    if (redirectUrl) {
+                        window.location.href = redirectUrl;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error submitting form:', error);
+                    alert('There was an error submitting your information. Please try again or contact us directly.');
+                })
+                .finally(() => {
+                    // Restore button state
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
